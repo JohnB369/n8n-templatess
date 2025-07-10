@@ -1,1 +1,7 @@
-Hello! How can I help you today?
+name: Test CI
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello world"
